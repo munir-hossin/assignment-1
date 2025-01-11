@@ -14,7 +14,6 @@ body {
 
 .container {
    width: 1240px;
-
    margin: 20px auto ;
 
 }
@@ -44,6 +43,24 @@ section {
 }
 
 
+/* common button style */
+button {
+
+  box-shadow: 0 1px 3px green;
+  color: white;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+
+button:hover {
+
+  box-shadow: 0 3px 8px green;
+  transform: scale(1);
+}
+
+
+
 /* Navbar */
 .logo {
     display: flex;
@@ -62,7 +79,7 @@ section {
 
 /* banner */
 .banner {
-    margin-top: 51px;
+    margin-top: 20px;
     padding: 0px 59px;
     display: flex;
     justify-content: center;
@@ -78,12 +95,10 @@ section {
     font-weight: 600;
     line-height: 22px;
     color: rgba(14, 14, 14, 0.5);
-    margin-bottom: 16px;
     
 }
 
 h1 {
-    /* width: 369px; */
     font: bold;
     font-size: 56px;
     line-height: 67px;
@@ -149,12 +164,6 @@ h1 {
 .v-3 {
     background: rgb(247, 235, 207);
 }
-
-.vision-item p {
-    /* margin-bottom: 24px;  */
-    /* margin-bottom: auto; */
-}
-
 
 
 .vision-item button {
@@ -345,10 +354,7 @@ h1 {
   }
 
   /* Donate Today */
-.donate {
-  /* width: 1280px; */
-  /* margin: 0 auto 80px; */
-}
+
 .donate h2 {
   font-size: 40px;
   font-weight: 700;
@@ -379,7 +385,7 @@ h1 {
 }
 
 
-.donate > a button {
+.donate button {
   padding: 17px 34px;
   color: white;
   font-size: 18px;
@@ -387,6 +393,8 @@ h1 {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+
+
   /* display: flex; */
   margin: 0 auto;
   background: rgb(0, 106, 80);
@@ -415,12 +423,11 @@ h1 {
 
 .donate-btn button:hover {
   background-color: #c6e4d6;
+
 }
 
 /* Subscribe Newsletter */
 .subscribe {
-  /* width: 1280px; */
-  margin: 0 auto 80px;
   padding: 80px 265px;
   background-color: #c6e4d6;
   border-radius: 24px;
@@ -434,12 +441,10 @@ h1 {
 }
 .subscribe p {
   text-align: center;
-  /* width: 622px; */
   margin: 0 auto 24px;
 }
 .subscribe input {
   padding: 18px 300px 18px 40px;
-  /* width: 600px; */
   height: 55px;
   border: none;
   border-top-left-radius: 8px;
@@ -447,6 +452,7 @@ h1 {
   font-size: 20px;
   font-weight: 400;
   color: rgba(14, 14, 14, 0.3);
+  outline: none;
 }
 .subscribe input::placeholder {
   font-size: 20px;
@@ -493,4 +499,3 @@ footer .footer-icons {
   gap: 23px;
   margin-bottom: 50px;
 }
-
